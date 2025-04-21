@@ -49,12 +49,7 @@ Building this project helped me master several React concepts:
 - Custom hooks pattern for reusable logic (potential extension)
 - Proper dependency array management to optimize renders
 
-### Advanced Patterns
-- Lifting state up to share across multiple components
-- Prop drilling for deep component communication
-- Controlled components for all form inputs
-
-## Challenges Faced & Solutions 🚧
+## Challenge Faced & Solutions 🚧
 
 ### Bidirectional Balance Calculation
 **Problem**: Tracking who owes whom was mathematically complex  
