@@ -1,8 +1,6 @@
 # Splitwise Clone 💰
 
-![React](https://img.shields.io/badge/React-18.2-blue)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-06B6D4)
-![LocalStorage](https://img.shields.io/badge/Data_LocalStorage-persisted-FFA500)
+##![Deployed Website](https://splitwise-6sxlvzs7x-arnavs-projects-83a078ef.vercel.app)
 
 A React-based expense sharing application that helps friends and roommates track shared expenses and settle balances.
 
@@ -59,7 +57,7 @@ Building this project helped me master several React concepts:
 
 ## Challenges Faced & Solutions 🚧
 
-### 1. Bidirectional Balance Calculation
+### Bidirectional Balance Calculation
 **Problem**: Tracking who owes whom was mathematically complex  
 **Solution**: Implemented a balance matrix that tracks each pairwise debt and then simplified to net amounts
 
@@ -74,44 +72,6 @@ users.forEach(payer => {
 });
 ```
 
-### 2. Data Persistence
-**Problem**: Data disappeared on page refresh  
-**Solution**: Implemented localStorage integration with JSON serialization
-
-```javascript
-useEffect(() => {
-  const saved = localStorage.getItem('splitwise-data');
-  if (saved) setData(JSON.parse(saved));
-}, []);
-
-useEffect(() => {
-  localStorage.setItem('splitwise-data', JSON.stringify(data));
-}, [data]);
-```
-
-### 3. Dynamic Participant Selection
-**Problem**: Managing participant lists when users change  
-**Solution**: Implemented auto-updating participant lists with validation
-
-
-## Project Structure 📂
-
-```
-src/
-├── components/
-│   ├── AddExpenseModal.js
-│   ├── AddUserModal.js
-│   ├── BalancesTab.js
-│   ├── ExpensesTab.js
-│   ├── UsersTab.js
-│   └── NavigationTabs.js
-├── hooks/               # (potential for custom hooks)
-├── utils/               # (helper functions)
-├── App.js
-├── App.css
-└── index.js
-```
-
 ## Usage Guide 📖
 
 1. **Add Friends**:
@@ -121,7 +81,7 @@ src/
 2. **Record Expenses**:
    - Go to "Expenses" tab
    - Click "Add Expense"
-   - Fill details (₹100.50 automatically formats)
+   - Fill details (₹317 automatically formats)
    - Select participants (defaults to all)
 
 3. **Settle Debts**:
@@ -129,19 +89,6 @@ src/
    - Click "Settle Up" next to any debt
    - Automatically records as special expense
 
-## Customization 🎨
-
-To modify currency or other settings:
-
-1. Edit `formatCurrency` in `App.js`:
-```javascript
-// Change to different currency
-new Intl.NumberFormat('en-IN', {
-  style: 'currency',
-  currency: 'INR', // Try 'EUR', 'GBP', etc.
-  minimumFractionDigits: 2
-})
-```
 
 ## Future Enhancements 🔮
 
@@ -149,4 +96,3 @@ new Intl.NumberFormat('en-IN', {
 - [ ] Expense categories and tags
 - [ ] Charts for spending visualization
 - [ ] Multi-currency support
-- [ ] Export data as CSV/PDF
