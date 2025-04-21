@@ -6,7 +6,7 @@
 A React-based expense sharing application that helps friends and roommates track shared expenses and settle balances.
 
 
-##App Screenshots
+## App Screenshots
 
 ![image](https://github.com/user-attachments/assets/61e61177-43e5-4ed0-8c71-fb337cab9ffa)
 ![image](https://github.com/user-attachments/assets/233ad954-57dd-4b9b-836c-68ef5be2d901)
