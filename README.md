@@ -2,6 +2,7 @@
 
 ## [Deployed Website](https://splitwise-6sxlvzs7x-arnavs-projects-83a078ef.vercel.app)
 
+
 A React-based expense sharing application that helps friends and roommates track shared expenses and settle balances.
 
 
